@@ -3,13 +3,11 @@ public class Product {
     private double price;
     private int quantity;
 
+
     //constructor
 
 
     public Product() {
-    }
-
-    public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -27,9 +25,12 @@ public class Product {
     public double getPrice() {
         return price;
     }
-//setters
-    public void setPrice(double price) {
+
+    //setters
+    public Product setPrice(double price) {
         this.price = price;
+
+        return null;
     }
 
     public int getQuantity() {
@@ -39,6 +40,14 @@ public class Product {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+
+
+    {
+
+
+    }
+
 
     @Override
     public String toString() {
