@@ -1,3 +1,8 @@
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
 public class ProductNext {
     public static void main(String[] args) {
         Product p1 = new Product();
@@ -24,8 +29,22 @@ public class ProductNext {
         p4.setQuantity(52);
         System.out.println(p4);
 
+        double maxPrice = p1.getPrice();
+        if(maxPrice< p2.getPrice())
+        maxPrice= p2.getPrice();
+        if(maxPrice< p3.getPrice())
+        maxPrice= p3.getPrice();
+        if(maxPrice< p4.getPrice())
+            maxPrice= p4.getPrice();
+        System.out.println("Product with a max price " + maxPrice);
 
-        }
-
+        int maxQuantity = p1.getQuantity();
+        if(maxQuantity< p2.getQuantity())
+            maxQuantity=p2.getQuantity();
+        if(maxQuantity< p3.getQuantity())
+            maxQuantity=p3.getQuantity();
+        if(maxQuantity< p4.getQuantity())
+            maxQuantity=p4.getQuantity();
+        System.out.println("Product with a max Quantity " + maxQuantity);
     }
-
+}

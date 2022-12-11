@@ -4,6 +4,7 @@ public class Product {
     private int quantity;
 
 
+
     //constructor
 
 
@@ -12,6 +13,8 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
     }
+
+
 
     //getters
     public String getName() {
@@ -37,17 +40,10 @@ public class Product {
         return quantity;
     }
 
+
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-
-
-
-    {
-
-
-    }
-
 
     @Override
     public String toString() {
@@ -56,5 +52,7 @@ public class Product {
                 ", price=" + price +
                 ", quantity=" + quantity +
                 '}';
+
     }
+
 }
