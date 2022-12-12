@@ -30,13 +30,12 @@ public class ProductNext {
         System.out.println(p4);
 
         double maxPrice = p1.getPrice();
-        if(maxPrice< p2.getPrice())
-        maxPrice= p2.getPrice();
-        if(maxPrice< p3.getPrice())
-        maxPrice= p3.getPrice();
-        if(maxPrice< p4.getPrice())
-            maxPrice= p4.getPrice();
-        System.out.println("Product with a max price " + maxPrice);
+        if(p1.getPrice()> p2.getPrice())
+            System.out.println("Product with a max price is " + p1.getName() + " for " + p1.getPrice());
+        else if (p2.getPrice()> p3.getPrice())
+            System.out.println("Product with a max price is " + p2.getName() + " for " + maxPrice);
+        else if(p4.getPrice()> p3.getPrice())
+            System.out.println("Product with a max price is " + p3.getName() + " for " + p3.getPrice());
 
         int maxQuantity = p1.getQuantity();
         if(maxQuantity< p2.getQuantity())
@@ -45,6 +44,7 @@ public class ProductNext {
             maxQuantity=p3.getQuantity();
         if(maxQuantity< p4.getQuantity())
             maxQuantity=p4.getQuantity();
-        System.out.println("Product with a max Quantity " + maxQuantity);
+        System.out.println("Product with a max quantity is " + p1.getName() + ", " + maxQuantity + "kg.");
+
     }
 }
